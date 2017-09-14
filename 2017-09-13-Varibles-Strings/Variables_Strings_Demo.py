@@ -51,8 +51,8 @@ width = 5
 area = length * width
 print('The area of a rectangle with width {} and length {} is {}'.format(width, length, area))
 #Types of errors
-x = 42
-# Syntax error 42 = x
+x = 42 # This works!
+# 42 = x  Syntax error!
 
 '''Semantic/Logic error'''
 length = 12
