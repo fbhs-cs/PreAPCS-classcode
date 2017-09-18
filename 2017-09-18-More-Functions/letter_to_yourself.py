@@ -33,3 +33,8 @@ print_name('1 Microsoft Way')
 print_name('Redmond, WA 98104')
 print_blank()
 print_edge()
+
+first = 'chad'
+last = 'purdy'
+print(first,end=' ')
+print(last)
