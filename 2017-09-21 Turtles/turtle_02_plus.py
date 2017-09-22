@@ -70,7 +70,9 @@ a rectangle with the given dimensions."""
 """MAIN METHOD (USE FOR TESTING)"""
 def main():
     t.reset()
+    t.penup()
     t.goto(-200,200)
+    t.pendown()
     draw_plus()
     t.penup()
     t.goto(200,200)
