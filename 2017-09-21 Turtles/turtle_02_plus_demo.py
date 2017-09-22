@@ -8,6 +8,8 @@ import turtle
 t = turtle.Turtle()
 t.seth(90)
 
+
+
 def moveForward():
     t.fd(50)
     
@@ -27,6 +29,7 @@ to draw a plus sign that is centered at the turtles starting location.
 Note: the turtle should end where it started, which is in the middle of the
 plus sign, facing up.
 """
+
 
 
 
@@ -61,8 +64,9 @@ that draws a rectangle."""
 """Define a function draw_nxn_rectangle that has two parameters: length and width that draws
 a rectangle with the given dimensions."""
 
+def draw_nxn_rectangle(length, width):
     
-
+  
 
 
 
@@ -71,18 +75,11 @@ a rectangle with the given dimensions."""
 """MAIN METHOD (USE FOR TESTING)"""
 def main():
     t.reset()
-    t.seth(90)
-    t.penup()
     t.goto(-200,200)
-    t.pendown()
     draw_plus()
-    t.penup()
     t.goto(200,200)
-    t.pendown()
     draw_rectangle()
-    t.penup()
     t.goto(0,-200)
-    t.pendown()
     draw_nxn_rectangle(5,3)
     
 #main()
