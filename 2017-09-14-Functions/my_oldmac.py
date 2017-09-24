@@ -28,5 +28,6 @@ def sing():
     verse('cows','moo')
     verse('chickens','cluck')
     verse('pigs','oink')
+    verse('skunks','pew')
 
 sing()
