@@ -36,7 +36,7 @@ square(tom,length=100)
 
 """Draw a pentagon in the top left of the screen"""
 moveTurtle(tom,-300,200)
-polygon(tom,length=100,n=5)  
+polygon(tom,length=50,n=5)  
 
 
 """Draw a circle in the top right of the screen"""
@@ -50,5 +50,5 @@ arc(tom,r=50,angle=180)
 
 
 """Draw an octagon in the bottom right of the screen"""
-moveTurtle(tom,300,-200)
+moveTurtle(tom,200,-200)
 polygon(tom,50,8)
