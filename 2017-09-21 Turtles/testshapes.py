@@ -19,7 +19,7 @@
         angle: angle subtended by the arc
 """
 
-from mypolygon import *
+from shapes import *
 import turtle
 
 tom = turtle.Turtle()
