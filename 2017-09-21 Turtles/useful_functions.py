@@ -11,7 +11,7 @@ def color_circle(t, r, c):
     '''
     t.color(c)
     t.begin_fill()
-    t.circle(r)
+    t.circle(r,90)
     t.end_fill()
     t.ht()  #hides the turtle
  

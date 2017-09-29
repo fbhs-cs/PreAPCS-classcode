@@ -1,4 +1,4 @@
-'''Using only the arithmetic operators: +, -, *, //, and **, and four 4s,
+'''Using only the arithmetic operators: +, -, *, /, and **, and parentheses, and four 4s,
    make the following statements true
    
    zero is done for you
