@@ -1,4 +1,4 @@
-'''Using only the arithmetic operators: +, -, *, //, and **, and four 4s,
+'''Using only the arithmetic operators: +, -, *, //, and **, parentheses, and four 4s,
    make the following statements true
    
    zero is done for you
@@ -14,3 +14,4 @@ print("Six is",4444)
 print("Seven is",4444)
 print("Eight is",4444)
 print("Nine is",4444)
+
