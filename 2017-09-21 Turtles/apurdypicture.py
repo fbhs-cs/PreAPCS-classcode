@@ -49,7 +49,7 @@ def draw_barn(t):
 def draw_roof(t):
     t.pu()
     t.setpos(-100,100)
-    draw_triangle(t,200,"black")
+    draw_triangle(t,200,"purple")
     t.pd()
     
 def draw_cloud(t):
@@ -119,6 +119,7 @@ def draw_knob(t):
     t.pd()
     
 def main():
+    tom.speed(0)
     setup(screen)
     draw_ground(tom)
     draw_grass(tom)
