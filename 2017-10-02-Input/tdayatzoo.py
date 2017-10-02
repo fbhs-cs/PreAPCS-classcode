@@ -55,3 +55,4 @@ t.bk(180)
 t.write('When I got home I {} my mom for a {} day at the zoo.'.format(verb3,adj4))
     
 
+turtle.mainloop()
