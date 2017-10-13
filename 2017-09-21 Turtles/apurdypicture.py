@@ -2,6 +2,7 @@
 '''
 
 import turtle
+from random import randint
 
 tom = turtle.Turtle()
 screen = turtle.Screen()
@@ -32,7 +33,7 @@ def draw_triangle(t,side,fillcolor):
 def draw_ground(t):
     t.pu()
     t.setpos(-205,-205)
-    draw_rectangle(t,410,100,"brown")
+    draw_rectangle(t,410,100,"grey")
     
 def draw_grass(t):
     t.pu()
@@ -49,12 +50,12 @@ def draw_barn(t):
 def draw_roof(t):
     t.pu()
     t.setpos(-100,100)
-    draw_triangle(t,200,"purple")
+    draw_triangle(t,200,"black")
     t.pd()
     
 def draw_cloud(t):
     t.pu()
-    t.setpos(-100,200)
+    t.setpos(randint(-150,150),200)
     t.color("white")
     t.begin_fill()
     t.circle(50)
@@ -119,17 +120,19 @@ def draw_knob(t):
     t.pd()
     
 def main():
-    tom.speed(0)
+    tom.speed(2)
     setup(screen)
     draw_ground(tom)
     draw_grass(tom)
     draw_cloud(tom)
-    draw_barn(tom)
+    
     draw_roof(tom)
+    draw_barn(tom)
     draw_left_window(tom)
     draw_left_frame(tom)
     draw_right_window(tom)
     draw_right_frame(tom)
+    
     draw_door(tom)
     draw_knob(tom)
     tom.ht()
