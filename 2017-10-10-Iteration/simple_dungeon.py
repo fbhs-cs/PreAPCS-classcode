@@ -3,7 +3,7 @@ import os
 
 play = True
 while play:
-    os.system('cls')
+    os.system('clear')
     room = 0
 
     while room != 3:

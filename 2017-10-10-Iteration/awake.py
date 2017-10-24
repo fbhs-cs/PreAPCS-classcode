@@ -1,6 +1,6 @@
 import os
 while True:
-    os.system('cls')
+    os.system('clear')
     print('You are startled awake...',end='')
     input()
     print('You look around the room and see a door and a window.')
