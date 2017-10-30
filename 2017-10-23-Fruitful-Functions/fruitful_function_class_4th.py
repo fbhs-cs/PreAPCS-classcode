@@ -74,8 +74,16 @@ def is_between(x,y,z):
        that is, x <= y <= z,
        returns False otherwise
     '''
+    if x <= y and y <= z:
+        return True
+    else:
+        return False
     
+    
+def main():
+    for i in range(2,100):
+        if is_divisible(i,3):
+            print(i)
 
-                   
-
-
+if __name__ == '__main__':
+    main()

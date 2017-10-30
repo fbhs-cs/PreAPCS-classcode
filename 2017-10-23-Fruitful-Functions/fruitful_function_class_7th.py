@@ -75,6 +75,10 @@ def is_between(x,y,z):
        that is, x <= y <= z,
        returns False otherwise
     '''
+    if x<=y<=z or z<=y<=x:
+        return True
+    else:
+        return False
     
 
                    
