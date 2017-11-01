@@ -55,10 +55,7 @@ def play_game():
         print('You chose: {}       Computer chose: {}'.format(pmove, cmove))
         
         
-        #Determine who wins -- you DO NOT need to
-        #                      fully understand this
-        #                      right now but you need
-        #                      to understand the scoring
+        #Determine who wins
         who_wins = (pc - cc) % 3
         if who_wins == 0:
             print('Draw!')
@@ -66,15 +63,13 @@ def play_game():
         elif who_wins == 1:
             print(turn_explanation(pc,cc))
             print('You win!')
-            num_wins += 1  # player wins
+            num_wins += 1  # player wins, add 1 to their score
             num_games += 1
-        elif who_wins == 2:
+        else:
             print(turn_explanation(pc,cc))
             print('You lose!')
             num_games += 1
-        else:
-            print('Something went wrong!')
-            break
+        
         
         display_score(num_wins,num_games)
         print('Play again? ([y]\\n)')
@@ -99,7 +94,7 @@ def turn_explanation(choice1, choice2):
         if choice1 == 1 or choice2 == 1:
             return 'Paper covers Rock.'
         elif choice1 == 2 or choice2 == 2:
-            return 'Rock breaks Scissors.'
+            return 'Rock crushes Scissors.'
         
 def move_name(num):
     if num == 0:
