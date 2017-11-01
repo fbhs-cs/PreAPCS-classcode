@@ -4,20 +4,23 @@ print('Welcome to the Magic Eight Ball')
 while True:
     print('Think of a yes/no question, then press <enter>')
     input()
-    num = randint(1,3)
+    num = randint(1,4)
     if num == 1:
         print('Yes, for sure.')
     elif num == 2:
         print('No, absolutely not.')
     elif num == 3:
         print('I can\'t tell for sure.')
+    elif num == 4:
+        print('Definitely.')
     #TODO MORE RESPONSES
-        # 3 POSITIVE RESPONSES
-        # 3 UNSURE RESPONSES
-        # 3 NEGATIVE RESPONSES
+        # 1 POSITIVE RESPONSES
+        # 2 UNSURE RESPONSES
+        # 2 NEGATIVE RESPONSES
         
     print('Do you have more questions? (y/n)')
-    again = input('> ')
-    #TODO check if they typed in y or n
-    break
+    again = input('> ').lower()
+    if again == 'n':
+        break
+   
     

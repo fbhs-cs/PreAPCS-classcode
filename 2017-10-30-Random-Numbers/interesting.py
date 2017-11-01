@@ -1,6 +1,6 @@
 import random
 total = 0
-NUM_TRIALS = 10
+NUM_TRIALS = 1000
 
 for i in range(NUM_TRIALS):
     sum = 0

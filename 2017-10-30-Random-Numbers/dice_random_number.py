@@ -10,7 +10,7 @@ num_of_sixes = 0
 num_of_sevens = 0
 num_of_eights = 0
 num_of_nines = 0
-NUM_TRIALS = 60
+NUM_TRIALS = 100000
 for trial in range(NUM_TRIALS):
     sum_of_ten = 0
     for i in range(10):
