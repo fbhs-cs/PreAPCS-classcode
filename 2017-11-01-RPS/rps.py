@@ -75,7 +75,11 @@ def play_game():
         print('Play again? ([y]\\n)')
         again = input('> ').upper()
         if again == 'N':
-            #TODO - ADD RESPONSES BASED ON HOW THE PLAYER DID OVERALL
+            num_losses = num_games - num_wins
+            if num_wins > num_losses:
+                print('Great job!')
+            else:
+                print('Better luck next time!')
             print('Thanks for playing!')
             break
         else:
@@ -89,12 +93,17 @@ def display_score(wins,total):
 
 
 def turn_explanation(choice1, choice2):
-    #TODO ADD OTHER TURN EXPLANATIONS
     if choice1 == 0 or choice2 == 0:
         if choice1 == 1 or choice2 == 1:
             return 'Paper covers Rock.'
         elif choice1 == 2 or choice2 == 2:
             return 'Rock crushes Scissors.'
+    else:
+        return 'Scissors cuts Paper.'
+    
+            
+            
+        
         
 def move_name(num):
     if num == 0:
@@ -108,8 +117,13 @@ def move_name(num):
 
 
 def show_rules():
-    #TODO EXPLAIN RULES
-    print('Rules go here.')
+    print('Choose Rock, Paper, or Scissors.')
+    print('Rock beats Scissors.')
+    print('Paper beats Rock.')
+    print('Scissors beats Paper.')
+    print('Play as long as you like,')
+    print('and try to beat your previous')
+    print('score!')
     
 
     
