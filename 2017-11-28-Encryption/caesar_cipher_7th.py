@@ -9,16 +9,25 @@ Encryption Algorithm
 6. Repeat steps 2 to 5 for every letter in the plaintext
    message.
 '''
-message = 'First, solve the problem. Then, write the code.'
-key = 7
+print('Enter the message: ')
+message = input('>')
+key = int(input('Enter the key: '))
+mode = input('(E)ncrypting or (D)ecrypting? ')
+if mode == 'E':
+    encrypting = True
+elif mode == 'D':
+    encrypting = False
+    
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 cipher_text = ''
 for plain_letter in message:
     if plain_letter.upper() in LETTERS:
         index = LETTERS.find(plain_letter.upper())
-        new_index = index + key
-        if new_index > 25:
-            new_index -= 26
+        if encrypting:
+            new_index = index + key
+        elif not encrypting:
+            new_index = index - key
+        new_index = new_index % 26
         cipher_text += LETTERS[new_index]
     else:
         cipher_text += plain_letter
