@@ -1,4 +1,3 @@
-
 run = True
 while run:
     while True:
@@ -49,6 +48,5 @@ while run:
             break
         else:
             print('Please enter y or n')
-
 
 
