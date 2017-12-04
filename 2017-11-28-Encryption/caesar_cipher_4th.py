@@ -28,8 +28,7 @@ for plain_letter in message:
         new_index = new_index % 26
         cipher_letter = LETTERS[new_index]
         cipher_text += cipher_letter
-    else:
-        cipher_text += plain_letter
+    
 
 print(cipher_text)
 '''
