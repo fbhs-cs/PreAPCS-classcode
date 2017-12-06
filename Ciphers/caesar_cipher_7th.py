@@ -18,10 +18,7 @@ def encrypt_decrypt(message, key, encrypting):
         else:
             out_text += letter
 
-    if encrypting:
-        out_text = 'Encrypted text:\n' + out_text
-    else:
-        out_text = 'Decrypted text:\n' + out_text
+    
     return out_text
 
 def main():
@@ -48,6 +45,10 @@ def main():
             except:
                 print('The key must be an integer.')
         
+        if encrypting:
+            print('Encrypted text:')
+        else:
+            print('Decrypted text:')
         print(encrypt_decrypt(message,key,encrypting))
         
         while True:
