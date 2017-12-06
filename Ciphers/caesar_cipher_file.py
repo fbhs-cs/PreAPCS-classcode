@@ -2,7 +2,15 @@ from caesar_cipher_4th import encrypt_decrypt
 
 
 def main():
-    
+     while True:
+         ec_file()
+         print('Do you have another file to encrypt/decrypt? (y/n)')
+         ans = input('> ')
+         if ans != 'y':
+             break
+ 
+ 
+def ec_file():
     # open the file holding the message to be encrypted or decrypted
     while True:
         in_filename = input('File name to encrypt/decrypt: ')
@@ -43,7 +51,9 @@ def main():
     
     f.close()
     print('All done!')
-            
+    return
+    
+    
 
 if __name__ == '__main__':
     main()
